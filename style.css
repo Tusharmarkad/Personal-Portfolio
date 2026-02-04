@@ -1,0 +1,466 @@
+/* ========== GLOBAL ========== */
+html {
+    scroll-behavior: smooth;
+}
+
+.main-background {
+    background-color: #09090B;
+    min-height: 100%;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    border-bottom: 1px solid #1F2937;
+}
+
+.logo-name {
+    color: #EAE6D2;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo-name:hover {
+    color: #A7AA63;
+    transform: scale(1.05);
+}
+
+.navbar-names {
+    color: #7A8594;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
+    margin: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-names:hover {
+    color: #16A34A;
+    transform: scale(1.05);
+}
+
+/* Custom toggler icon color for dark bg */
+.custom-toggler .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ========== HERO ========== */
+#Home {
+    min-height: 100vh;
+    padding: 100px 0 80px;
+    display: flex;
+    align-items: center;
+}
+
+.internship {
+    background-color: #151A21;
+    border-radius: 30px;
+    border: 1px solid #1F2937;
+    color: #16A34A;
+    width: fit-content;
+    padding: 8px 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.internship p {
+    margin: 0;
+}
+
+.main-header {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.main-para {
+    margin-top: 14px;
+    color: #B3BDC9;
+    max-width: 520px;
+    font-size: 16px;
+}
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+}
+
+/* Hero Buttons */
+.button-projects,
+.button-download {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-projects {
+    background-color: #22C55E;
+    color: #000;
+}
+
+.button-projects:hover {
+    color: #22C55E;
+    background-color: #0B0F14;
+    border: 1px solid #22C55E;
+    transform: scale(1.05);
+}
+
+.button-download {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.button-download:hover {
+    color: #ffffff;
+    background-color: #0B0F14;
+    border: 1px solid #ffffff;
+    transform: scale(1.05);
+}
+
+/* ========== ABOUT ========== */
+#About {
+    padding: 100px 0;
+}
+
+.about-header {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.para {
+    color: #B3BDC9;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* About Me Cards */
+.aboutme-cards {
+    background-color: #18181B;
+    border-radius: 10px;
+    padding: 24px;
+    height: 100%;
+    min-height: 200px;
+}
+
+.card-head {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+/* ========== SKILLS ========== */
+#skills {
+    background-color: #18181B;
+    padding: 100px 0;
+}
+
+.skill-head {
+    color: #16A34A;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.bar-card {
+    background-color: #09090B;
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+}
+
+.bar-card-1 {
+    width: 100%;
+}
+
+.bar-card-1 h4 {
+    margin-bottom: 4px;
+}
+
+.bar-card-1 p {
+    margin-bottom: 4px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #1F2937;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #22C55E;
+    border-radius: 999px;
+}
+
+/* ========== PROJECTS ========== */
+#projects {
+    padding: 100px 0;
+}
+
+.project-card {
+    background-color: #18181B;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: border 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    border: 2px solid #22C55E;
+    transform: scale(1.03);
+}
+
+.project-image {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h4 {
+    margin-bottom: 6px;
+}
+
+.project-info .para {
+    margin-bottom: 10px;
+}
+
+/* Language Tags */
+.language-tag {
+    border: 1px solid #3F3F47;
+    border-radius: 5px;
+    padding: 4px 12px;
+    color: #B3BDC9;
+    font-size: 13px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.language-tag-wide {
+    padding: 4px 10px;
+}
+
+.project-button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.project-button:hover {
+    background-color: transparent;
+    border: 1px solid #00FF88;
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+/* ========== HOBBIES ========== */
+#Fitness {
+    background-color: #18181B;
+    padding: 100px 0;
+}
+
+.hobby-title {
+    color: #00FF88;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.fitness-cards {
+    background-color: #09090B;
+    border-radius: 10px;
+    padding: 14px 18px;
+    width: 100%;
+}
+
+/* ========== CONTACT ========== */
+#Contact {
+    padding: 100px 0;
+}
+
+.connect-button {
+    background-color: #18181B;
+    border: none;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.connect-button:hover {
+    border: 1px solid #00FF88;
+    transform: scale(1.08);
+}
+
+/* ========== FOOTER ========== */
+#Footer {
+    background-color: #18181B;
+    padding: 60px 0;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* ---- TABLET (max 991px — below lg) ---- */
+@media (max-width: 991px) {
+    .main-header {
+        font-size: 34px;
+    }
+
+    .about-header {
+        font-size: 34px;
+    }
+
+    .profile-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    #Home {
+        padding: 80px 0 60px;
+    }
+}
+
+/* ---- MOBILE (max 767px — below md) ---- */
+@media (max-width: 767px) {
+
+    /* Hero: stack text above image, center everything */
+    #Home {
+        padding: 80px 0 60px;
+        min-height: auto;
+    }
+
+    .main-header {
+        font-size: 28px;
+    }
+
+    .about-header {
+        font-size: 28px;
+    }
+
+    .main-para {
+        max-width: 100%;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Buttons side by side if they fit, else stack */
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .button-projects,
+    .button-download {
+        font-size: 16px;
+        padding: 10px 22px;
+    }
+
+    /* About cards full width */
+    .aboutme-cards {
+        min-height: auto;
+    }
+
+    /* Skills cards full width */
+    .bar-card {
+        margin-bottom: 10px;
+    }
+
+    /* Project cards full width */
+    .project-image {
+        height: 180px;
+    }
+
+    /* Fitness trait cards full width — already handled by col-12 */
+    .fitness-cards {
+        width: 100%;
+    }
+
+    /* Sections less padding on mobile */
+    #About,
+    #skills,
+    #projects,
+    #Fitness,
+    #Contact {
+        padding: 60px 0;
+    }
+
+    #Footer {
+        padding: 40px 0;
+    }
+}
+
+/* ---- SMALL MOBILE (max 400px) ---- */
+@media (max-width: 400px) {
+    .main-header {
+        font-size: 24px;
+    }
+
+    .about-header {
+        font-size: 24px;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .button-projects,
+    .button-download {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .connect-button {
+        height: 60px;
+        width: 60px;
+    }
+
+    .connect-button svg {
+        width: 28px !important;
+        height: 28px !important;
+    }
+}
